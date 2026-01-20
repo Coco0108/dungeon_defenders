@@ -1,15 +1,19 @@
-.mcreator/workspaceBackups/
-.eclipse/configurations/
-.vscode/
-run/
+# Gradle
 .gradle/
-gradle
-settings.gradle
-mcreator.gradle
-build.gradle
-gradlew.bat
-gradlew
-gradle.properties
-build
-.mcreator/generatorGradleCache
-src/main/resources/pack.mcmeta
+build/
+
+# MCreator & IDEs
+.mcreator/
+.eclipse/
+.settings/
+.classpath
+.project
+.vscode/
+
+# Minecraft Run (Mondes de test, logs, configs locales)
+run/
+usercache.json
+usernamecache.json
+
+# Divers
+*.log
