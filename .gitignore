@@ -1,0 +1,15 @@
+.mcreator/workspaceBackups/
+.eclipse/configurations/
+.vscode/
+run/
+.gradle/
+gradle
+settings.gradle
+mcreator.gradle
+build.gradle
+gradlew.bat
+gradlew
+gradle.properties
+build
+.mcreator/generatorGradleCache
+src/main/resources/pack.mcmeta
