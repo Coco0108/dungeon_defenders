@@ -20,6 +20,10 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.dungeondefenders.network.DungeonDefendersModVariables;
+import net.mcreator.dungeondefenders.init.DungeonDefendersModTabs;
+import net.mcreator.dungeondefenders.init.DungeonDefendersModItems;
+
 import javax.annotation.Nullable;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -43,6 +47,9 @@ public class DungeonDefendersMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		DungeonDefendersModItems.REGISTRY.register(modEventBus);
+		DungeonDefendersModTabs.REGISTRY.register(modEventBus);
+		DungeonDefendersModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
