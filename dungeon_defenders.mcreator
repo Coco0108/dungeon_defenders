@@ -333,6 +333,90 @@
         ]
       },
       "path": "~/Gameplay/Crystal"
+    },
+    {
+      "name": "ManaChest",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dungeon_defenders/models/item/mana_chest.json",
+          "src/main/resources/assets/dungeon_defenders/items/mana_chest.json",
+          "src/main/resources/assets/dungeon_defenders/blockstates/mana_chest.json",
+          "src/main/java/net/mcreator/dungeondefenders/block/ManaChestBlock.java",
+          "src/main/resources/data/dungeon_defenders/loot_table/blocks/mana_chest.json",
+          "src/main/resources/assets/dungeon_defenders/models/block/mana_chest.json"
+        ]
+      },
+      "path": "~/Gameplay/Chest"
+    },
+    {
+      "name": "ChestOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chest_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dungeondefenders/procedures/ChestOpenProcedure.java"
+        ]
+      },
+      "path": "~/Gameplay/Chest"
+    },
+    {
+      "name": "ChestManaDrop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chest_mana_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "ManaValue",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dungeondefenders/procedures/ChestManaDropProcedure.java"
+        ]
+      },
+      "path": "~/Gameplay/Chest"
     }
   ],
   "variable_elements": [
@@ -365,6 +449,12 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "ChestManaValue",
+      "type": "number",
+      "scope": "map",
+      "value": "8.0"
     }
   ],
   "sound_elements": [],
@@ -383,11 +473,13 @@
       "item.dungeon_defenders.mana_reset": "Mana Reset",
       "entity.dungeon_defenders.crystal": "Crystal",
       "item.dungeon_defenders.crystal_spawn_egg": "Crystal Spawn Egg",
-      "gui.dungeon_defenders.game_over.label_game_over": "Game Over"
+      "gui.dungeon_defenders.game_over.label_game_over": "Game Over",
+      "item.dungeon_defenders.mana_chest": "Mana Chest"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModBlocks.java",
       "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModItems.java",
       "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModEntities.java",
       "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModEntityRenderers.java",
@@ -411,6 +503,10 @@
           },
           {
             "name": "Crystal",
+            "children": []
+          },
+          {
+            "name": "Chest",
             "children": []
           }
         ]
