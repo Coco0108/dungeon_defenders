@@ -7,5 +7,8 @@
   "item.dungeon_defenders.mana_test_50": "Mana Test 50",
   "item.dungeon_defenders.mana_test_500": "Mana Test 500",
   "item.dungeon_defenders.mana_test_2000": "Mana Test 2000",
-  "item.dungeon_defenders.mana_reset": "Mana Reset"
+  "item.dungeon_defenders.mana_reset": "Mana Reset",
+  "entity.dungeon_defenders.crystal": "Crystal",
+  "item.dungeon_defenders.crystal_spawn_egg": "Crystal Spawn Egg",
+  "gui.dungeon_defenders.game_over.label_game_over": "Game Over"
 }

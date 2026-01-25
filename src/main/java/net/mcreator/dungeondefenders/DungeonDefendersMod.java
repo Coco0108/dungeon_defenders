@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.dungeondefenders.network.DungeonDefendersModVariables;
 import net.mcreator.dungeondefenders.init.DungeonDefendersModTabs;
 import net.mcreator.dungeondefenders.init.DungeonDefendersModItems;
+import net.mcreator.dungeondefenders.init.DungeonDefendersModEntities;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class DungeonDefendersMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		DungeonDefendersModItems.REGISTRY.register(modEventBus);
+		DungeonDefendersModEntities.REGISTRY.register(modEventBus);
 		DungeonDefendersModTabs.REGISTRY.register(modEventBus);
 		DungeonDefendersModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init

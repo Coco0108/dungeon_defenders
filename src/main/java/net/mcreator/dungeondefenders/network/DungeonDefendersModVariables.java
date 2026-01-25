@@ -163,15 +163,18 @@ public class DungeonDefendersModVariables {
 		boolean _syncDirty = false;
 		public double Wave_Max = 0;
 		public double Wave_Current = 0;
+		public boolean IsGameOver = false;
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			Wave_Max = nbt.getDoubleOr("Wave_Max", 0);
 			Wave_Current = nbt.getDoubleOr("Wave_Current", 0);
+			IsGameOver = nbt.getBooleanOr("IsGameOver", false);
 		}
 
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("Wave_Max", Wave_Max);
 			nbt.putDouble("Wave_Current", Wave_Current);
+			nbt.putBoolean("IsGameOver", IsGameOver);
 			return nbt;
 		}
 

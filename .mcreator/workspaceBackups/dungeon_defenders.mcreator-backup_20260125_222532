@@ -265,6 +265,23 @@
         ]
       },
       "path": "~/Gameplay/Mana"
+    },
+    {
+      "name": "Crystal",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dungeon_defenders/items/crystal_spawn_egg.json",
+          "src/main/java/net/mcreator/dungeondefenders/client/renderer/CrystalRenderer.java",
+          "src/main/resources/assets/dungeon_defenders/models/item/crystal_spawn_egg.json",
+          "src/main/java/net/mcreator/dungeondefenders/entity/CrystalEntity.java",
+          "src/main/resources/data/dungeon_defenders/neoforge/biome_modifier/crystal_biome_modifier.json"
+        ]
+      },
+      "path": "~/Gameplay"
     }
   ],
   "variable_elements": [
@@ -306,14 +323,19 @@
       "item.dungeon_defenders.mana_test_50": "Mana Test 50",
       "item.dungeon_defenders.mana_test_500": "Mana Test 500",
       "item.dungeon_defenders.mana_test_2000": "Mana Test 2000",
-      "item.dungeon_defenders.mana_reset": "Mana Reset"
+      "item.dungeon_defenders.mana_reset": "Mana Reset",
+      "entity.dungeon_defenders.crystal": "Crystal",
+      "item.dungeon_defenders.crystal_spawn_egg": "Crystal Spawn Egg"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModItems.java",
+      "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModEntities.java",
+      "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModEntityRenderers.java",
       "src/main/java/net/mcreator/dungeondefenders/network/DungeonDefendersModVariables.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModModels.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/dungeondefenders/DungeonDefendersMod.java",
       "src/main/java/net/mcreator/dungeondefenders/init/DungeonDefendersModTabs.java"
